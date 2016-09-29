@@ -1,0 +1,141 @@
+ul > li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: limegreen;
+    text-decoration: none
+}
+
+.main-content {
+    background-color: #F0F2F5;
+   min-height: 790px;
+
+}
+/*����Ŀ¼��ʼ*/
+.list-all-meau {
+    line-height: 50px;
+    padding:0;
+    margin-bottom: 0;
+    background-color:#FFFFFF;
+    border-radius:0;
+}
+.article-main {
+    background-color:#FFFFFF;
+    margin-top:20px;
+}
+/*����Ŀ¼����*/
+/*Ԥ������tab��ʼ*/
+.yjsz-header {
+    border-bottom:4px solid limegreen;
+    background-color: #F0F2F5;
+}
+.yjsz-header li {
+    margin-bottom: 0;
+}
+.yjsz-header li>a {
+    border-radius:0;
+}
+.yjsz-header>li.active>a, .yjsz-header>li.active>a:hover, .yjsz-header>li.active>a:focus  {
+    background-color:limegreen;
+}
+/*Ԥ������tab����*/
+/*Ԥ���������忪ʼ*/
+.yjgz-box {
+    margin:50px ;
+
+}
+/*Ԥ�������������*/
+/*����Ԥ����ʼ*/
+.tcyj-box {
+    margin:50px;
+
+    padding-bottom: 50px;
+}
+.tcyj-save-box,.dxyj-save-box {
+    background-color:#FAFAFA;
+    height:50px;
+    line-height:50px;
+}
+.tcyj-box .tcyj-save-box,.dxyj-box .dxyj-save-box {
+    margin-left:-50px;
+    margin-right:-50px;
+}
+.tcyj-current,.dxyj-current {
+    padding-left:0;
+}
+.tcyj-save,.dxyj-save {
+    margin-left:200px;
+}
+/*����Ԥ������*/
+/*����Ԥ����ʼ*/
+.dxyj-box {
+
+    margin:50px;
+    padding-bottom: 50px;
+}
+/*����Ԥ������*/
+/*�ʼ�Ԥ����ʼ*/
+.yjyj-box {
+    margin:50px;
+
+    padding-bottom: 50px;
+}
+.yjyj-save-box{
+    background-color:#FAFAFA;
+    height:50px;
+    line-height:50px;
+}
+.yjyj-box .yjyj-save-box{
+    margin-left:-50px;
+    margin-right:-50px;
+}
+.yjyj-current {
+    padding-left:0;
+}
+
+.yjyj-save {
+    margin-left:200px;
+}
+/*�ʼ�Ԥ������*/
+
+/*联系人*/
+.lxr-box {
+    margin:50px;
+
+    padding-bottom: 50px;
+}
+.lxr-table>thead>tr>th, .lxr-table>tbody>tr>th, .lxr-table>tfoot>tr>th, .lxr-table>thead>tr>td, .lxr-table>tbody>tr>td, .lxr-table>tfoot>tr>td {
+    vertical-align: middle;
+}
+.lxr-checkbox-all {
+    width:20px;
+    height:20px;
+}
+.lxr-title-add {
+    margin-left:15px;
+}
+.lxr-add {
+    height:34px;
+    line-height: 34px;
+}
+.lxr-add-header {
+    background-color:#80D3F7;
+}
+.lxr-add-header h4 {
+    font-family:'����';
+    font-weight:900;
+    line-height:50px;
+}
+.lxr-add-modal,.lxr-delete-modal {
+    top:150px;
+}
+.lxr-delete {
+    background-color:#80D3F7;
+}
+
+

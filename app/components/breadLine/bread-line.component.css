@@ -1,0 +1,18 @@
+.home {
+    line-height: 50px;
+    padding-left: 10px;
+    font-size: 14px;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 0 1px 1px #aaa;
+    margin-top:50px ;
+}
+
+.home_jt {
+    position: relative;
+    left: 10px;
+}
+.glyphicon-home:before {
+  content: "\e021";
+  font-size: 0.75em;
+}

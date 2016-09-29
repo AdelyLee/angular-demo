@@ -1,0 +1,243 @@
+<bread-zdy></bread-zdy>
+<div class="container-fluid">
+<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" (click)="lgModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">新建标签</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="row sel">
+			<div class="col-md-3 name-r">
+				<label for="name"><span class="name_red">*</span>标签名称</label>
+			</div>
+			<div class="col-md-9">
+		        <input type="text" class="form-control" placeholder="" value="标签名称">
+		    </div>
+		</div>
+        <div class="row">
+        	<div class="col-md-3 name-r">
+				<label for="name">展示方式</label>
+			</div>
+			<div class="col-md-9">
+		        <div class="radio">
+	              <label>
+		           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 列表
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 关键词
+	              </label>
+               </div>
+		    </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-3 name-r">
+				<label for="name">文章特性</label>
+			</div>
+			<div class="col-md-9">
+		        <div class="radio">
+	              <label>
+		           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 相关
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 舆情
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> 正面
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"> 负面
+	              </label>
+               </div>
+		    </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-3 name-r">
+				<label for="name">来源</label>
+			</div>
+			<div class="col-md-9">
+		        <div class="radio">
+	              <label>
+		           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 不限
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 境内
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> 境外
+	              </label>
+               </div>
+		    </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-3 name-r">
+				<label for="name">维度</label>
+			</div>
+			<div class="col-md-9">
+        	<div class="checkbox">
+	            <label><input type="checkbox" value="">腐败</label>
+	            <label><input type="checkbox" value="">群体事件</label>
+	            <label><input type="checkbox" value="">执法</label>
+	            <label><input type="checkbox" value="">交通事故</label>
+	            <label><input type="checkbox" value="">拆迁</label>
+	            <label><input type="checkbox" value="">信访</label>
+	            <label><input type="checkbox" value="">涉隐</label>
+	            <label><input type="checkbox" value="">涉赌</label>
+	            <label><input type="checkbox" value="">涉爆</label>
+	            <label><input type="checkbox" value="">涉毒</label>
+	             <label><input type="checkbox" value="">涉疆</label>
+	            <label><input type="checkbox" value="">涉藏</label>
+	             <label><input type="checkbox" value="">涉黄</label>
+	            <label><input type="checkbox" value="">涉贪</label>
+	             <label><input type="checkbox" value="">民生</label>
+	            <label><input type="checkbox" value="">教育</label>
+            </div>
+           </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-3 name-r">
+				<label for="name">维度</label>
+			</div>
+			<div class="col-md-9">
+        	<div class="checkbox">
+	            <label><input type="checkbox" value="" checked>综合</label>
+	            <label><input type="checkbox" value="" checked>新闻</label>
+	            <label><input type="checkbox" value="" checked>博客</label>
+	            <label><input type="checkbox" value="" checked>论坛</label>
+	            <label><input type="checkbox" value="" checked>微博</label>
+	            <label><input type="checkbox" value="" checked>微信</label>
+	            <label><input type="checkbox" value="" checked>QQ群</label>
+	            <label><input type="checkbox" value="" checked>电子报</label>
+	            <label><input type="checkbox" value="" checked>视频</label>
+	            <label><input type="checkbox" value="" checked>手机wap</label>
+	            <label><input type="checkbox" value="" checked>其他</label>
+            </div>
+           </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-3 name-r">
+				<label for="name">排序方式</label>
+			</div>
+			<div class="col-md-9">
+		        <div class="radio">
+	              <label>
+		           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 时间
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 热度
+	             </label>
+               </div>
+		    </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-3 name-r">
+				<label for="name">排重方式</label>
+			</div>
+			<div class="col-md-9">
+		        <div class="radio">
+	              <label>
+		           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 排重
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 不排重
+	             </label>
+               </div>
+		    </div>
+        </div>
+        <div class="row">
+			<div class="col-md-3 name-r">
+				<label for="name">关键词设置</label>
+			</div>
+			<div class="col-md-9">
+		        <input type="text" class="form-control" placeholder="" value="可输入多个关键词 例：官员*(贪污+受贿)">
+		    </div>
+		</div>
+        <div class="row">
+        	<div class="col-md-3 name-r">
+				
+			</div>
+			<div class="col-md-9">
+		        <div class="radio">
+	              <label>
+		           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 标题含有
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 正文含有
+	              </label>
+	              <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> 标题和正文都含有
+	              </label>
+               </div>
+		    </div>
+        </div>
+      </div>
+       <div class="modal-footer">
+			<button type="button" class="btn btn-info" data-dismiss="modal">确定
+			</button>
+			<button type="button" class="btn btn-primary">
+			取消
+			</button>
+		</div>
+    </div>
+  </div>
+</div>
+	<div class="com-md-12">
+		<div class="col-md-12">
+			<div class="row">
+			   	<div class="thumbnail">
+                    <div class="caption">
+                        <div class="row">
+                         	<div class="home_search">
+			      	            <button class="btn btn-info" (click)="lgModal.show()">
+			      	 	              + 新建标签
+			      	            </button>
+			                </div>
+                        </div>
+                        <div class="row">
+                            <table class="table table-hover table-bordered yuqing-stat">
+                                <thead>
+                                    <tr>
+                                    <th>标签名称</th>
+                                    <th>排序</th>
+                                    <th>是否可见</th>
+                                    <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody *ngIf="hero"> 
+	                            <tr *ngFor="let hero of hero.bqglcontent">
+	                            <td class="active">{{hero.name}}</td>
+	                            <td class="active">
+	                                                                                    上移|下移
+	                            </td>
+	                            <td class="active"><button class="sxx_list">可见</button></td>
+	                            <td class="active">
+	                                <button class="sqxx_list" (click)="lgModal.show()">编辑</button>
+	                                <button class="sqxx_list">删除</button>
+	                            </td>
+	                            </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+			                <ul class="pagination">
+	                        <li><a href="#">&laquo;</a></li>
+	                        <li><a href="#">1</a></li>
+	                        <li><a href="#">2</a></li>
+	                        <li><a href="#">3</a></li>
+	                        <li><a href="#">4</a></li>
+	                        <li><a href="#">5</a></li>
+	                        <li><a href="#">&raquo;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+			  
+	</div>
+ 	
+</div>  
+

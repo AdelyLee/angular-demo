@@ -1,0 +1,71 @@
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: limegreen;
+    text-decoration: none
+}
+ul {
+    list-style: none;
+}
+.main-content {
+    background-color: #F0F2F5;
+    height:700px;
+    z-index: 1;
+}
+.sjjc-box {
+    background-color: #0044cc;
+}
+
+
+
+/*事件监测头部开始*/
+.select-set {
+    background-color: #FFFFFF;
+    height: 40px;
+    margin-top: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.select-left {
+    float: left;
+    font-size: 16px;
+    margin-left: 15px;
+    line-height: 40px;
+}
+.sjjc-search {
+    float: right;
+    line-height: 34px;
+    height:34px;
+}
+
+/*事件监测头部结束*/
+
+/*事件监测主体开始*/
+.sjjc-small-box {
+    background-color:#FFFFFF;
+    padding:20px;
+}
+/*事件监测主体结束*/
+/*新建事件开始*/
+.sjjc-add-header {
+    background-color:#80D3F7;
+}
+.sjjc-title-add {
+    font-size:25px;
+    color:#000000;
+    line-height: 50px;
+    margin-left:15px;
+}
+/*新建事件结束*/
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+  border-bottom-width: 0px; 
+}
+.table-hover>tbody>tr{
+  background-color: #f5f5f5;
+}
+.table-hover>tbody>tr:hover{
+  background-color: #ddd;
+}

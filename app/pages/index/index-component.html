@@ -1,0 +1,71 @@
+<bread-line></bread-line>
+<div class="content">
+    <div class="col-md-12 col" id="sid">
+    <div class="col-md-12 contant">
+        <div class="data_count">
+        	<!--<accordion [closeOthers]="oneAtATime">
+                <accordion-group #group [isOpen]="status.isFirstOpen"[isDisabled]="status.isFirstDisabled">
+                    <div accordion-heading>
+                                                         舆情数据统计
+                     <i class="pull-right glyphicon"
+                     [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-up': !group?.isOpen}"></i>  
+                     </div>
+                <div class="col-sm-4">
+                <index-app></index-app>
+                </div>
+                <div class="col-sm-5">
+                 <my-dashboard></my-dashboard>
+                </div>
+                <div class="col-sm-3">
+                  <my-hero-detail></my-hero-detail>
+                </div>
+               </accordion-group>
+            </accordion>-->
+          
+          <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="yq_wz">舆情数据统计</div>
+                        <div class="jt">
+                            <span class="typcn typcn-arrow-sorted-up" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></span>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="col-sm-4">
+                                <index-app></index-app>
+                            </div>
+                            <div class="col-sm-5">
+                                <my-dashboard></my-dashboard>
+                            </div>
+                            <div class="col-sm-3">
+                                <my-hero-detail></my-hero-detail>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+            <my-heroes></my-heroes>
+        </div>
+        <div class="row">
+        <div class="col-sm-6">
+            <data-count></data-count>
+        </div>
+        <div class="col-sm-6 con">
+            <news-count></news-count>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-6">
+            <news-count></news-count>
+        </div>
+        <div class="col-sm-6 con">
+            <news-count></news-count>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+

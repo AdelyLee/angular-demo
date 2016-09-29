@@ -1,0 +1,124 @@
+<bread-line></bread-line>
+<div class="container-fluid">
+<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" *ngIf="hero">
+      <div class="modal-header">
+        <button type="button" class="close" (click)="lgModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">新建栏目</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row sel">
+			<div class="col-md-3 name-r">
+				<label for="name"><span class="name_red">*</span>栏目名称</label>
+			</div>
+			<div class="col-md-9">
+		        <input class="form-control" [(ngModel)]="hero.lmname"  name="lmname" placeholder="请输入名称" id="lmname" required #lmname>
+		  </div>
+		</div>
+      </div>
+       <div class="modal-footer">
+			<button type="button" class="btn btn-info" data-dismiss="modal" (click)="addZdylm()">确定
+			</button>
+			<button type="button" class="btn btn-primary" (click)="goBack()">
+			取消
+			</button>
+		</div>
+    </div>
+  </div>
+</div>
+<div bsModal #lgaModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" (click)="lgaModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">修改栏目</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row sel">
+			<div class="col-md-3 name-r">
+				<label for="name"><span class="name_red">*</span>栏目名称</label>
+			</div>
+			<div class="col-md-9">
+		        <input type="text" class="form-control" placeholder="" value="特别关注">
+		    </div>
+		</div>
+      </div>
+       <div class="modal-footer">
+			<button type="button" class="btn btn-info" data-dismiss="modal">确定
+			</button>
+			<button type="button" class="btn btn-primary">
+			取消
+			</button>
+		</div>
+    </div>
+  </div>
+</div>
+	<div class="com-md-12">
+		<div class="col-md-12">
+			<div class="row">
+			   	<div class="thumbnail">
+                    <div class="caption">
+                        <div class="row">
+                         	<div class="home_search">
+			      	            <button class="btn btn-info" (click)="lgModal.show()">
+			      	 	              + 新建栏目
+			      	            </button>
+			                </div>
+                        </div>
+                        <div class="row">
+                            <table class="table table-hover table-bordered yuqing-stat">
+                                <thead>
+                                    <tr>
+                                    <th>栏目名称</th>
+                                    <th>栏目类型</th>
+                                    <th>创建时间</th>
+                                    <th>是否可见</th>
+                                    <th>排序</th>
+                                    <th>操作</th>
+                                    </tr>
+                                </thead>
+                              <tbody *ngIf="hero"> 
+	                            <tr *ngFor="let hero of hero">
+	                            <td class="active">{{hero.lmname}}</td>
+	                            <td class="active">{{hero.lmtype}}</td>
+	                            <td class="active">{{hero.lmtime}}</td>
+	                            <td class="active"><button class="sxx_list">可见</button></td>
+	                            <td class="active">
+	                                                                         上移|下移
+	                            </td>
+	                            <td class="active">
+	                            	  <nav>
+	                                <button class="sqxx_list"><a routerLink="/label" routerLinkActive="active">标签管理</a></button>
+	                                </nav>
+	                                <button class="sqxx_list" (click)="lgaModal.show()">编辑</button>
+	                                <button class="sqxx_list" (click)="delete(hero); $event.stopPropagation()">删除</button>
+	                            </td>
+	                            </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+			                <ul class="pagination">
+	                        <li><a href="#">&laquo;</a></li>
+	                        <li><a href="#">1</a></li>
+	                        <li><a href="#">2</a></li>
+	                        <li><a href="#">3</a></li>
+	                        <li><a href="#">4</a></li>
+	                        <li><a href="#">5</a></li>
+	                        <li><a href="#">&raquo;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+			  
+	</div>
+ 	
+</div>  
+

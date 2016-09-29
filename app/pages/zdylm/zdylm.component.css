@@ -1,0 +1,67 @@
+.row,.col-md-12{padding-left:0px ; padding-right:0px ;}
+.sqxx_list{float: left; margin-left:10px ;}
+.thumbnail {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left:20px ;
+  margin-right:20px ;
+}
+.home_search {
+  float: right;
+  margin-top: 1px;
+  margin-right: 10px;
+}
+.table {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  padding: 3px;
+  font-size:14px ;
+}
+.table>thead>tr>th {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.pagination {
+  margin: 0px 0;
+  padding-left: 40%;
+}
+.pagination {
+  margin: 0px 0;
+  padding-right: 20px;
+}
+.modal-header {
+  min-height: 16.43px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color:#0088CC ;
+  color:#ffffff ;
+}
+.modal-lg {
+  width: 600px; 
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 100; 
+}
+.name-r{
+	text-align: right;
+}
+.btn-info {
+  color: #fff;
+  background-color: #FF0000;
+  border-color: #FF0000;
+}
+a{color: #666666; text-decoration: none;}
+.modal-footer {
+  text-align: center;
+}
+
+/*标签管理*/
+.checkbox, .radio {
+  margin-top: 5px;
+  margin-bottom:5px ;
+}

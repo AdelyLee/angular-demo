@@ -1,0 +1,22 @@
+<div id = "jryq_zdfxTen_table">
+    <table class="table table-hover table-bordered ">
+        <thead>
+        <tr>
+            <th class = "text-center">排名</th>
+            <th class = "text-center">媒体名称</th>
+            <th class = "text-center">相关文章</th>
+            <th class = "text-center">负面文章</th>
+            <th class = "text-center">正面文章</th>
+        </tr>
+        </thead>
+        <tbody *ngIf = "yqyj">
+        <tr class = "text-center" *ngFor = "let yqyj of yqyj.content">
+            <td>{{yqyj.sort}}</td>
+            <td >{{yqyj.type}}</td>
+            <td >{{yqyj.relatedCount}}</td>
+            <td >{{yqyj.negativeCount}}</td>
+            <td >{{yqyj.frontCount}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,64 @@
+/*套餐信息*/
+.row,.col-md-12{padding-left:0px ; padding-right:0px ; margin-left:0px ; margin-right:0px ;}
+.pie {
+	 width:100px; 
+	 height:100px; 
+	 background-color:orangered;
+	 border-radius:100px;
+	 position:absolute;
+	}
+.pie1 { clip:rect(0px,100px,100px,50px); }
+.pie2 { clip:rect(0px,50px,100px,0px); }
+.hold {
+	 width:100px; height:100px;
+	 position:absolute;
+	 z-index:1;
+	}
+.hold1 { clip:rect(0px,100px,100px,50px); }
+.hold2 { clip:rect(0px,100px,100px,0px); }
+.bg { width:100px; height:100px; background-color:#ddd; border-radius:100px; position:absolute; }
+.time { width:60px; height:60px; margin:20px 0 0 20px; background-color:#fff; border-radius:100px; position:absolute; z-index:1; }
+.time-conut{position:absolute; top:6px; left:10px;font-size:12px ;}
+.time-conut p{text-align: center;}
+.yybj{ 
+	-webkit-box-shadow:0 0 10px 5px black;  
+  -moz-box-shadow: 0 0 10px 5px black;  
+  box-shadow:0 0 10px 5px black;
+  }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  text-align: center;
+  background-color: #428bca;
+  border-color: #428bca;
+  min-height:80px ;
+  font-size:24px ;
+  line-height:80px ;
+}
+.list-group-item.activea, .list-group-item.activea:hover, .list-group-item.activea:focus{
+  text-align: center;
+  color: #ffffff;
+  background-color:rgba(212,0,0,0.6);
+  border-color: rgba(212,0,0,0.6);
+  
+}
+.list-group-item {
+  text-align: center;
+}
+.col-sm-3{  
+  padding-right: 10px; 
+  padding-left: 10px; 
+}
+.row_red{padding-left:15px;color:red ;}
+.panel-default>.panel-heading {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+.yq_wz {
+  float: left;
+  margin-top: -5px;
+  font-size: 14px;
+  font-family: "å¾®è½¯é›…é»‘";
+  color: #999999;
+}
+.panel-group {
+  margin-top: 20px;
+}

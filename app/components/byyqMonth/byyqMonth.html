@@ -1,0 +1,10 @@
+<div *ngIf = "yqyj">
+    <div class = "col-md-3 col-lg-3 col-sm-4 col-xs-12 " *ngFor = "let yqyj of yqyj.content">
+        <div class="yqrb-box">
+            <p class = "text-center yqyb-times">{{yqyj.time}}</p>
+            <p class = "text-center">{{yqyj.month}}</p>
+            <hr/>
+            <p class = "text-center yqyb-edit"><span class = "btn btn-default">编辑</span><span class = "btn btn-default">预览</span><span class = "btn btn-default">下载</span></p>
+        </div>
+    </div>
+</div>

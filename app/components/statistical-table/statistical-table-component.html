@@ -1,0 +1,61 @@
+<table class="table table-hover table-bordered yuqing-stat">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>今天</th>
+        <th>昨天</th>
+        <th>近7天</th>
+        <th>近30天</th>
+    </tr>
+    </thead>
+    <tbody *ngIf="tableData">
+    <!--<tr *ngIf="tableData.today">-->
+        <!--<td>今天</td>-->
+        <!--<td class="active">{{tableData.today.News}}</td>-->
+        <!--<td class="active">{{tableData.today.Bar}}</td>-->
+        <!--<td class="active">{{tableData.today.Weibo}}</td>-->
+        <!--<td class="active">{{tableData.today.Bar}}</td>-->
+    <!--</tr>-->
+    <!--<tr *ngIf="tableData.yesterday">-->
+        <!--<td>昨天</td>-->
+        <!--<td class="active">{{tableData.yesterday.News}}</td>-->
+        <!--<td class="active">{{tableData.yesterday.Bar}}</td>-->
+        <!--<td class="active">{{tableData.yesterday.Weibo}}</td>-->
+        <!--<td class="active">{{tableData.yesterday.Bar}}</td>-->
+    <!--</tr>-->
+    <!--<tr *ngIf="tableData.week">-->
+        <!--<td>近7天</td>-->
+        <!--<td class="active">{{tableData.week.News}}</td>-->
+        <!--<td class="active">{{tableData.week.Bar}}</td>-->
+        <!--<td class="active">{{tableData.week.Weibo}}</td>-->
+        <!--<td class="active">{{tableData.week.Bar}}</td>-->
+    <!--</tr>-->
+    <!--<tr *ngIf="tableData.month">-->
+        <!--<td>近30天</td>-->
+        <!--<td class="active">{{tableData.month.News}}</td>-->
+        <!--<td class="active">{{tableData.month.Bar}}</td>-->
+        <!--<td class="active">{{tableData.month.Weibo}}</td>-->
+        <!--<td class="active">{{tableData.month.Bar}}</td>-->
+    <!--</tr>-->
+    <tr *ngFor="let hero of tableData.xgcontent">
+        <td>{{hero.name}}</td>
+        <td class="active">{{hero.jtcount}}</td>
+        <td class="active">{{hero.ztcount}}</td>
+        <td class="active">{{hero.qtcount}}</td>
+        <td class="active">{{hero.stcount}}</td>
+    </tr>
+    <tr>
+        <td colspan="6">
+        </td>
+    </tr>
+    <tr *ngFor="let hero of tableData.xwcontent">
+        <td>{{hero.name}}</td>
+        <td class="active">{{hero.jtcount}}</td>
+        <td class="active">{{hero.ztcount}}</td>
+        <td class="active">{{hero.qtcount}}</td>
+        <td class="active">{{hero.stcount}}</td>
+    </tr>
+    </tbody>
+</table>
+
+

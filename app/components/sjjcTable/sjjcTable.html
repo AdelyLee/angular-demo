@@ -1,0 +1,110 @@
+<div class = "sjjc-small-box">
+    <table class="table table-hover table-bordered lxr-table">
+        <thead>
+        <tr>
+            <th class = "text-center"> 编号 </th>
+            <th class = "text-center">事件名称</th>
+            <th class = "text-center">事件图表</th>
+            <th class = "text-center">事件报告</th>
+            <th class = "text-center">事件导控</th>
+            <th class = "text-center">是否过期</th>
+            <th class = "text-center">操作</th>
+        </tr>
+        </thead>
+        <tbody *ngIf = "yqyj">
+        <tr class = "text-center" *ngFor = "let yqyj of yqyj.content">
+            <td> 1</td>
+            <td>{{yqyj.detail}}</td>
+            <td>查看</td>
+            <td>专报申请 一键生成报告</td>
+            <td >导控申请</td>
+            <td >未过期</td>
+            <td  (click)="lgModal.show()">编辑</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class = "text-center">
+        <div class="row">
+	<ul class="pagination">
+	<li><a href="#">&laquo;</a></li>
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li><a href="#">&raquo;</a></li>
+    </ul>
+</div>
+    </div>
+    <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"  aria-label="Close" (click)="lgModal.hide()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">新建事件</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group clearfix">
+                        <div class="col-md-1"></div>
+                        <label class="control-label col-md-3 text-right lxr-add">事件名称：</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control" name="inviter">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="col-md-1"></div>
+                        <label class="control-label col-md-3 text-right  lxr-add">开始时间：</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control"  name="inviter">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="col-md-1"></div>
+                        <label class="control-label col-md-3 text-right  lxr-add">结束时间：</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control" name="inviter">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="col-md-1"></div>
+                        <label class="control-label col-md-3 text-right  lxr-add">关键字：</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control" name="inviter" placeholder="输入后敲回车确定">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="col-md-1"></div>
+                        <label class="control-label col-md-3 text-right  lxr-add">排除词：</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control" name="inviter" placeholder = "输入后敲回车确定">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="col-md-1"></div>
+                        <label class="control-label col-md-3 text-right  lxr-add">屏蔽词：</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control" name="inviter" placeholder = "输入后敲回车确定">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" (click)="lgModal.hide()">
+                        确定
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="lgModal.hide()">
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

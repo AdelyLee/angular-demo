@@ -1,0 +1,90 @@
+<header class="modal-header">
+    <div class="logo">北京卓越讯通舆情系统</div>
+       <nav class="navbar navbar-top-links navbar-right mbn">
+            <!--<ul class="nav navbar-nav pull-right">-->
+            	<div class="pull-right">
+                <li><span class="typcn typcn-document-text"></span><span class="text">专报信息</span></li>
+                <li><span class="typcn typcn-document"></span><span class="text">导控信息</span></li>
+                <li>
+                	<div dropdown dropdown-lab-to-body>
+                	<span class="typcn typcn-bell" id="lab-to-body" dropdownToggle>
+                    </span>
+                     <ul class="dropdown-menu" role="menu" aria-labelledby="lab-to-body">
+                     <li role="menuitem"><a class="" href="#">消息一</a></li>
+                     <li class="divider dropdown-divider"></li>
+                     <li role="menuitem"><a class="" href="#">查看全部消息</a></li>
+                     </ul>
+                   </div>
+                </li>
+                <li>
+                	<div dropdown dropdown-lab-to-body>
+                	<span class="typcn typcn-cog-outline" id="lab-to-body" dropdownToggle>
+                		 <span class="caret"></span>
+                    </span>
+                     <ul class="dropdown-menu" role="menu" aria-labelledby="lab-to-body">
+                      <nav>
+                      <li role="menuitem"><a routerLink="/keyword" routerLinkActive="active"><span class="typcn typcn-eye"></span>关键词设置</a></li>
+                      <li class="divider dropdown-divider"></li>
+                      <li role="menuitem"><a routerLink="/zdylm" routerLinkActive="active"><span class="typcn typcn-edit"></span>自定义栏目设置</a></li>
+                      </nav>
+                     </ul>
+                  </div>
+                </li>
+                <li>
+                	<div dropdown dropdown-lab-to-body>
+                	<span class="typcn typcn-user" id="lab-to-body" dropdownToggle>
+                		 <span class="caret"></span>
+                    </span>
+                     <ul class="dropdown-menu" role="menu" aria-labelledby="lab-to-body">
+                      <nav>
+                      <li role="menuitem"><a routerLink="/grzx" routerLinkActive="active"><span class="typcn typcn-user-outline"></span>&nbsp;个人信息</a></li>
+                      <li role="menuitem"><a routerLink="/tc" routerLinkActive="active"><span class="typcn typcn-th-large"></span>&nbsp;套餐信息</a></li>
+                      <li class="divider dropdown-divider"></li>
+                      <li role="menuitem"><a routerLink="/help" routerLinkActive="active"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;帮助中心</a></li>
+                      <li role="menuitem"><a><span class="typcn typcn-power-outline"></span>&nbsp;退出系统</a></li>
+                      </nav>
+                     </ul>
+                 </div>      
+                </li>
+            <!--</ul>-->
+            </div>
+       </nav>
+
+</header>
+<nav>
+    <div class="col-md-1 dh" id="wrapper">
+        <ul class="nav">
+            <li><a routerLink="/index" routerLinkActive="active"><span class="typcn typcn-home-outline"></span><span class="dh_wz">控制台</span></a></li>
+            <li><a routerLink="/qjyq" routerLinkActive="active"><span class="typcn typcn-arrow-move"></span><span class="dh_wz">全景舆情</span></a></li>
+            <li><a routerLink="/yqyj" routerLinkActive="active"><span class="typcn typcn-info-outline"></span><span class="dh_wz">舆情预警</span></a></li>
+            <li><a routerLink="/sjjc" routerLinkActive="active"><span class="typcn typcn-tags"></span><span class="dh_wz">事件检测</span></a></li>
+            <li><a><span class="typcn typcn-chart-bar-outline"></span><span class="dh_wz">专项分析</span></a>
+                <ul>
+                    <li><a routerLink="/jryq" routerLinkActive="active"><span class="dh_wz dh_ss">今日舆情</span></a></li>
+                    <li><a routerLink="/bzyq" routerLinkActive="active"><span class="dh_wz dh_ss">本周舆情</span></a></li>
+                    <li><a routerLink="/byyq" routerLinkActive="active"><span class="dh_wz dh_ss">本月舆情</span></a></li>
+                    <li>分类舆情
+                        <ul>
+                            <li>企业巡查
+                                <ul>
+                                    <li><a routerLink="/aqscjdj" routerLinkActive="active"><span class="dh_wz dh_ss">安全生产管理局</span></a></li>
+                                </ul>
+                            </li>
+                            <li>行业新闻
+                                <ul>
+                                    <li><a routerLink="/hyxw" routerLinkActive="active"><span class="dh_wz dh_ss">行业新闻</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="contentBox col-md-11">
+    <router-outlet></router-outlet>
+</div>
+<footer class="footer col-md-12">
+        版权所有:北京卓越讯通科技有限公司 2015-2016
+</footer>

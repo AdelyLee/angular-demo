@@ -1,0 +1,14 @@
+<div class="article-top clearfix" (click)="$event.preventDefault()" style = "display: inline-block;">
+
+    <div class="btn-group" dropdown dropdown-append-to-body style = "display: inline-block;">
+        <button id="btn-append-to-body" type="button" class="btn btn-primary" dropdownToggle>
+            导出文章<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="btn-append-to-body" >
+            <li role="menuitem"><a class="dropdown-item" href="#">不带文章内容导出</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">带文章内容导出</a></li>
+        </ul>
+    </div>
+
+
+</div>

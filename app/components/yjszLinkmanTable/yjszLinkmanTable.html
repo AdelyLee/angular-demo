@@ -1,0 +1,108 @@
+<div >
+    <div class = "lxr-box">
+        <div>
+            <button type="button" class="btn btn-success pull-left" (click) = "smDelModal.show()">批量删除</button>
+            <button type="button" class="btn btn-success pull-right" (click) = "lgAddModal.show()" >添加联系人</button>
+        </div>
+        <table class="table table-hover table-bordered  lxr-table">
+            <thead>
+            <tr>
+                <th class = "text-center">
+                    <label class="checkbox-block">
+                        <input type="checkbox" name="package_id" value="1" class = "lxr-checkbox-all" >
+                    </label>
+                </th>
+                <th class = "text-center">联系人</th>
+                <th class = "text-center">手机号</th>
+                <th class = "text-center">邮箱</th>
+                <th class = "text-center">操作</th>
+            </tr>
+            </thead>
+            <tbody *ngIf = "yqyj">
+            <tr class = "text-center" *ngFor = "let yqyj of yqyj.content">
+                <td>
+                    <label class="checkbox-block">
+                        <input type="checkbox" name="package_id" value="1" >
+                    </label>
+                </td>
+                <td>{{yqyj.name}}</td>
+                <td>{{yqyj.phone}}</td>
+                <td>{{yqyj.email}}</td>
+                <td ><span (click) = "lgAddModal.show()">编辑</span>|<span (click) = "smDelModal.show()">删除</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <div bsModal #lgAddModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <button type="button" class="close"  aria-label="Close" (click) = "lgAddModal.hide()" >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" >
+                            添加联系人
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group clearfix">
+                            <div class="col-md-1"></div>
+                            <label class="control-label col-md-3 text-right lxr-add">联系人：</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" placeholder="请输入姓名" name="inviter">
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div class="col-md-1"></div>
+                            <label class="control-label col-md-3 text-right  lxr-add">手机号：</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" placeholder="请输入手机号" name="inviter">
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div class="col-md-1"></div>
+                            <label class="control-label col-md-3 text-right  lxr-add">邮箱地址：</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" placeholder="请输入邮箱地址" name="inviter">
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" (click) = "lgAddModal.hide()">
+                            保存
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" (click) = "lgAddModal.hide()" >
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div bsModal #smDelModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <button type="button" class="close"  aria-label="Close" (click) = "smDelModal.hide()" >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" >
+                            是否移除联系人
+                        </h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" (click) = "smDelModal.hide()">
+                            确定
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" (click) = "smDelModal.hide()" >
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,66 @@
+ <div class="login" *ngIf="hero">
+    <div class="login_xx">
+        <div class="dlxx"> {{hero.loginjbcontent[0].name}}</div>
+        <div class="home_search">
+			<button id="btton" class="btn btn-info" data-toggle="modal"  data-target="#myModal" type="button">
+			     编辑
+			</button>
+		</div>
+    </div>
+    <div class="login_xxwz">
+        <div class="row">
+            <div class="col-sm-6">   
+                <div class="col-sm-4 namz">
+				    <label for="name">{{hero.loginjbcontent[0].na}}:</label>
+				</div>
+				<div class="col-sm-8">
+		            <input type="text" class="form-control" placeholder="" value="{{hero.loginjbcontent[0].navalue}}">
+		        </div>
+		    </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">   
+                <div class="col-sm-4 namz">
+				    <label for="name">{{hero.loginjbcontent[0].gendername}}:</label>
+				</div>
+				<div class="col-sm-8">
+		        <select class="form-control">
+			        <option>{{hero.loginjbcontent[0].gender}}</option>
+			        <option>{{hero.loginjbcontent[0].genderwm}}</option>
+		        </select> 
+		        </div>
+		    </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">   
+                <div class="col-sm-4 namz">
+				    <label for="name">{{hero.loginjbcontent[0].unitname}}:</label>
+				</div>
+				<div class="col-sm-8">
+		           <input type="text" class="form-control" placeholder="" value="{{hero.loginjbcontent[0].unit}}">
+		        </div>
+		    </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">   
+                <div class="col-sm-4 namz">
+				    <label for="name">{{hero.loginjbcontent[0].emialname}}:</label>
+				</div>
+				<div class="col-sm-8">
+		            <input type="text" class="form-control" placeholder="" value="{{hero.loginjbcontent[0].emial}}">
+		        </div>
+		    </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">   
+                <div class="col-sm-4 namz">
+				    <label for="name">{{hero.loginjbcontent[0].placename}}:</label>
+				</div>
+				<div class="col-sm-8">
+		            <input type="text" class="form-control" placeholder="" value="{{hero.loginjbcontent[0].place}}">
+		        </div>
+		    </div>
+        </div>
+                              	  	
+</div>
+</div>

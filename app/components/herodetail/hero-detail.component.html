@@ -1,0 +1,14 @@
+ <div class="col-sm-12">
+    <div class="list-group" *ngIf="hero">
+      <p class="list-group-item" *ngFor="let hero of hero.zdcontent">{{hero.name}}
+        <span class="badge badge-warning pull-right">{{hero.count}}</span>
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="list-group" *ngIf="hero">   	
+	    <p class="list-group-item" *ngFor="let hero of hero.kfcontent">{{hero.name}}
+	      <span class="pull-right">{{hero.count}}</span>
+	    </p>
+    </div>
+  </div>

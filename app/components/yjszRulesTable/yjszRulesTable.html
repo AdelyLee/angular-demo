@@ -1,0 +1,257 @@
+<div >
+    <div class = "yjgz-box">
+        <div>
+            <button type="button" class="btn btn-success pull-right"(click) = "lgAddModal.show()" >添加预警规则</button>
+        </div>
+        <table class="table table-hover table-bordered yuqing-stat">
+            <thead>
+            <tr>
+                <th class = "text-center">规则名称</th>
+                <th class = "text-center">启用状态</th>
+                <th class = "text-center">操作</th>
+            </tr>
+            </thead>
+            <tbody *ngIf = "yqyj">
+            <tr class = "text-center" *ngFor = "let yqyj of yqyj.content">
+                <td>{{yqyj.rules}}</td>
+                <td >开启</td>
+                <td ><span (click) = "lgAddModal.show()" >编辑</span>|<span (click) = "smDelModal.show()">删除</span></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div bsModal #lgAddModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <button type="button" class="close"  aria-label="Close" (click) = "lgAddModal.hide()" >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" >
+                        添加预警规则
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="form-horizontal ">
+                        <div class="form-group clearfix">
+                            <div class="col-md-1"></div>
+                            <label class="control-label col-md-3">规则名称：</label>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" placeholder="" name="inviter">
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="control-label col-md-4">文章属性：</label>
+                            <div class="col-md-8">
+                                <div class="btn-group" data-toggle="yjgz_edit_wzsx">
+                                    <label class="checkbox-inline tcyj-current">
+                                        <input type="radio" name="yjgz_edit_wzsx" value="1" checked>相关
+                                    </label>
+                                    <label class="checkbox-inline tcyj-current">
+                                        <input type="radio" name="yjgz_edit_wzsx" value="2" >舆情
+                                    </label>
+                                    <label class="checkbox-inline tcyj-current">
+                                        <input type="radio" name="yjgz_edit_wzsx" value="3" >正面
+                                    </label>
+                                    <label class="checkbox-inline tcyj-current">
+                                        <input type="radio" name="yjgz_edit_wzsx" value="4" >负面
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="control-label col-md-4">维度：</label>
+                            <div class="col-md-8">
+                                <div class="btn-group" data-toggle="yjgz_edit_wd">
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >腐败
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" checked>群体事件
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >执法
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" checked>交通事故
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >拆迁
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >信访
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >涉稳
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >涉赌
+                                    </label>
+                                    <br/>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >涉爆
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >涉毒
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >涉疆
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >涉藏
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >涉黄
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >涉贪
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >民生
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_wd" value="1" >教育
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="control-label col-md-4">来源：</label>
+                            <div class="col-md-8">
+                                <div class="btn-group" data-toggle="yjgz_edit_ly">
+                                    <label class="checkbox-inline tcyj-current">
+                                        <input type="radio" name="yjgz_edit_ly" value="1" checked>境内
+                                    </label>
+                                    <label class="checkbox-inline tcyj-current">
+                                        <input type="radio" name="yjgz_edit_ly" value="2" >境外
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="control-label col-md-4">载体：</label>
+                            <div class="col-md-8">
+                                <div class="btn-group" data-toggle="yjgz_edit_zt">
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" checked>综合
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >新闻
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >博客
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >论坛
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >微博
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >微信
+                                    </label>
+                                    <br/>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >QQ群
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >电子报
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >视频
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >手机wap
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_zt" value="1" >其他
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div class="col-md-1"></div>
+                            <label class="control-label col-md-3">包含以下全部关键词：</label>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" placeholder='请输入多个关键词,用","分隔' name="inviter">
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div class="col-md-1"></div>
+                            <label class="control-label col-md-3">包含以下任意关键词：</label>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" placeholder='请输入多个关键词,用","分隔' name="inviter">
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div class="col-md-1"></div>
+                            <label class="control-label col-md-3">不包含以下全部关键词：</label>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" placeholder='请输入多个关键词,用","分隔' name="inviter">
+                            </div>
+                            <div class="ocl-md-3"></div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="control-label col-md-4">预警接收人：</label>
+                            <div class="col-md-8">
+                                <div class="btn-group" data-toggle="yjgz_edit_yjjsr">
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_yjjsr" value="1" checked>lsm
+                                    </label>
+                                    <label class="checkbox-inline ">
+                                        <input type="checkbox" name="yjgz_edit_yjjsr" value="1" >sl
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix yjgz-save-box">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 text-center">
+                                <a href="javascript:void(0);" class="btn btn-success">保存</a>
+                                <a href="javascript:void(0);" class="btn btn-success">取消</a>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" (click) = "lgAddModal.hide()">
+                        保存
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" (click) = "lgAddModal.hide()" >
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div bsModal #smDelModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <button type="button" class="close"  aria-label="Close" (click) = "smDelModal.hide()" >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" >
+                        是否移除预警规则
+                    </h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" (click) = "smDelModal.hide()">
+                        确定
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" (click) = "smDelModal.hide()" >
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

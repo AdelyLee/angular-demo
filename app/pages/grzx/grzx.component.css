@@ -1,0 +1,88 @@
+/*个人中心*/
+.row {
+  margin-bottom: 10px;
+}
+.row,.col-md-12 {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left:0px ;
+  padding-right:0px ;
+}
+.thumbnail {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.thumbnail {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.login{margin-top:20px ;}
+.dlxx{float: left;}
+.login_xx{
+	height:40px ;
+	background-color:#0088CC ; 
+	font-size:14px ; 
+	color:#ffffff ;
+	line-height:40px ;
+	padding-left:10px ;
+	}
+.login_xxwz{border:1px solid #0088CC; min-height:50px ;}
+.nam {
+  padding-left: 80px;
+}
+.row{margin-bottom:10px ;}
+.namz{padding-left: 180px;}
+.namb{margin-left:-90px ;}
+.nampassword{margin-left:-10px ;}
+.namp{margin-left:-40px;}
+.nampa{margin-left:-30px ;}
+.namzc{
+   margin-left:-20px ;
+}
+.nambzc{margin-left:-145px ;}
+.home_search {
+  float: right;
+  margin-top:1px ;
+  margin-right: 10px;
+}
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.col-sm-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+}
+.nam {
+  padding-left: 80px;
+}
+.col-sm-4 {
+  padding-right: 15px;
+}
+label {
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.namb {
+  margin-left: -90px;
+}
+.nampassword {
+  margin-left: -10px;
+}
+.namp {
+  margin-left: -40px;
+}
+.nampa {
+  margin-left: -30px;
+}
+.namzc {
+  margin-left: -20px;
+}
+.nambzc {
+  margin-left: -145px;
+}
+.dlxx {
+  float: left;
+}

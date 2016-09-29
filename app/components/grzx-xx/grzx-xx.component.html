@@ -1,0 +1,46 @@
+<div class="login" *ngIf="hero">
+    <div class="login_xx">
+       {{hero.logincontent[0].name}}
+    </div>
+    <div class="login_xxwz">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="col-sm-4 nam">
+				    <label for="name">{{hero.logincontent[0].phonename}}:</label>
+				</div>
+				<div class="col-sm-8 namb">
+		            <input type="text" class="form-control" placeholder="" value="{{hero.logincontent[0].phone}}">
+		        </div>
+            </div>
+            <div class="col-sm-6">       	  
+                <div class="col-sm-2 nampassword">
+				    <label for="name">{{hero.logincontent[0].apasswordname}}:</label>
+				</div>
+				<div class="col-sm-8 namp">
+		            <input type="text" class="form-control" placeholder="" value="{{hero.logincontent[0].apassword}}">
+		        </div>
+		        <div class="col-sm-2 nampa">
+		            <button class="btn btn-info">修改密码</button>
+		        </div>
+            </div>
+            </div>
+            <div class="row">
+             <div class="col-sm-6">
+                    <div class="col-sm-4 nam">
+				            <label for="name">{{hero.logincontent[0].industryname}}:</label>
+				    </div>
+				    <div class="col-sm-8 namb">
+		                <input type="text" class="form-control" placeholder="" value="{{hero.logincontent[0].industry}}">
+		            </div>
+            </div>
+            <div class="col-sm-6">       	  
+                <div class="col-sm-4 namzc">
+				   <label for="name">{{hero.logincontent[0].zctimename}}:</label>
+				</div>
+				<div class="col-sm-8 nambzc">
+		            <input type="text" class="form-control" placeholder="" value="{{hero.logincontent[0].zctime}}">
+		        </div>
+            </div>
+           </div>
+   </div>
+</div>

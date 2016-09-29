@@ -1,0 +1,28 @@
+<div *ngIf="yqyj">
+<div class="row" *ngFor="let yqyj of yqyj.content">
+    <div class="row">
+        <div class="sxx_list">
+            <label class="checkbox-inline">
+		        <input type="checkbox" id="inlineCheckbox2" value="option2">
+		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="btwz">{{yqyj.title}}</span>
+		    </label>
+	        <span class="typcn typcn-star-full-outline"></span>
+	        <span class="article-warn">预警文章</span>
+            <span class="article-warn">已发送预警文件</span>
+        </div>
+        <div class="wzx_list"><span class="hot">hot1</span></div>
+    </div>
+    <div class="row">
+        <p class="wl_wz">{{yqyj.content}}</p>
+    </div>
+    <div class="row">
+    <div class="zd_xx">
+        <ul>
+			<il>站点：{{yqyj.station}}</il>
+			<il class="zd_wzxx">发布时间：{{yqyj.time}}</il>
+			<il class="zd_wzxx">作者：{{yqyj.author}}</il>
+		</ul>
+	</div>
+    </div>
+</div>
+</div>
