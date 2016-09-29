@@ -1,0 +1,82 @@
+{
+   "containerId": "funnel",
+   "color" : [
+        "rgba(255, 69, 0, 0.5)",
+        "rgba(255, 150, 0, 0.5)",
+        "rgba(255, 200, 0, 0.5)",
+        "rgba(155, 200, 50, 0.5)",
+        "rgba(55, 200, 100, 0.5)"
+    ],
+    "tooltip" : {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b} : {c}%"
+    },
+    "legend": {
+        "data" : ["相关信息","舆情信息","正面信息","负面信息","预警信息"]
+    },
+    "calculable" : true,
+    "series" : [
+        {
+            "name":"",
+            "type":"funnel",
+            "x": "10%",
+            "width": "80%",
+            "itemStyle": {
+                "normal": {
+                    "label": {
+                        "formatter": "{b}"
+                    },
+                    "labelLine": {
+                        "show" : false
+                    }
+                },
+                "emphasis": {
+                    "label": {
+                        "position":"inside",
+                        "formatter": "{b} : {c}%"
+                    }
+                }
+            },
+            "data":[
+                {"value":60, "name":"相关信息"},
+                {"value":40, "name":"舆情信息"},
+                {"value":20, "name":"正面信息"},
+                {"value":80, "name":"负面信息"},
+                {"value":100, "name":"预警信息"}
+            ]
+        },
+        {
+            "name":"",
+            "type":"funnel",
+            "x": "10%",
+            "width": "80%",
+            "maxSize": "80%",
+            "itemStyle": {
+                "normal": {
+                    "borderColor": "#fff",
+                    "borderWidth": 2,
+                    "label": {
+                        "position": "inside",
+                        "formatter": "{c}%",
+                        "textStyle": {
+                            "color": "#fff"
+                        }
+                    }
+                },
+                "emphasis": {
+                    "label": {
+                        "position":"inside",
+                        "formatter": "{b}: {c}%"
+                    }
+                }
+            },
+            "data":[
+                {"value":30, "name":"相关信息"},
+                {"value":10, "name":"舆情信息"},
+                {"value":5, "name":"正面信息"},
+                {"value":50, "name":"负面信息"},
+                {"value":80, "name":"预警信息"}
+            ]
+        }
+    ]
+}

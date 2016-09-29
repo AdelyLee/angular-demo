@@ -1,0 +1,120 @@
+{
+  "containerId": "JryqZtfbPie",
+   "color" : [
+        "#F92A0F",
+        "#F97D0F",
+        "#FFF722",
+        "#61F327",
+        "#27B2F3",
+        "#FA5DE9"
+    ],
+  "title": {
+    "text": "载体分布",
+    "subtext": "",
+    "x": "center"
+  },
+  "tooltip": {
+    "trigger": "item",
+    "formatter": "{a} <br/>{b} : {c} ({d}%)"
+  },
+  "legend": {
+    "orient": "vertical",
+    "left": "left",
+    "data": [
+      "新闻",
+      "微信",
+      "综合",
+      "博客",
+      "微博",
+      "论坛"
+    ]
+  },
+  "series": [
+    {
+      "name": "负面文章",
+      "type": "pie",
+      "selectedMode": "single",
+      "radius": [0,60],
+      "center": [
+        "50%",
+        "50%"
+      ],
+      "data": [
+        {
+          "value": 545,
+          "name": "新闻"
+        },
+        {
+          "value": 530,
+          "name": "微信"
+        },
+        {
+          "value": 574,
+          "name": "综合"
+        },
+        {
+          "value": 535,
+          "name": "博客"
+        },
+        {
+          "value": 548,
+          "name": "微博"
+        },{
+          "value": 508,
+          "name": "论坛"
+        }
+      ],
+      "itemStyle" : {
+        "normal" : {
+          "label" : {
+            "position" : "inner"
+          },
+          "labelLine" : {
+            "show" : "false"
+          }
+        }
+      }
+    },
+    {
+      "name": "正面文章",
+      "type": "pie",
+      "radius": [90,130],
+      "center": [
+        "50%",
+        "50%"
+      ],
+      "data": [
+        {
+          "value": 335,
+          "name": "新闻"
+        },
+        {
+          "value": 310,
+          "name": "微信"
+        },
+        {
+          "value": 234,
+          "name": "综合"
+        },
+        {
+          "value": 135,
+          "name": "博客"
+        },
+        {
+          "value": 1548,
+          "name": "微博"
+        },{
+          "value": 548,
+          "name": "论坛"
+        }
+      ],
+      "itemStyle": {
+        "emphasis": {
+          "shadowBlur": 10,
+          "shadowOffsetX": 0,
+          "shadowColor": "rgba(0, 0, 0, 0.5)"
+        }
+      }
+    }
+  ]
+}

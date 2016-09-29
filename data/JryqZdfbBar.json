@@ -1,0 +1,101 @@
+{
+  "containerId": "JryqZdfbBar",
+  "color": [
+    "#E873E9",
+    "#2FDBF5",
+    "#FF604F"
+  ],
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "legend":{
+    "data":["相关","负面","正面"]
+  },
+  "grid": {
+    "left": "3%",
+    "right": "4%",
+    "bottom": "3%",
+    "containLabel": true
+  },
+  "xAxis": [
+    {
+      "type": "category",
+      "data": [
+        "微信",
+        "百度贴吧",
+        "新浪博客",
+        "新浪微博",
+        "星电力新闻网",
+        "中国能源网",
+        "凤凰网",
+        "新浪网",
+        "北极星电力网",
+        "中金在线"
+      ],
+      "axisTick": {
+        "alignWithLabel": true
+      }
+    }
+  ],
+  "yAxis": [
+    {
+      "type": "value"
+    }
+  ],
+  "series": [
+    {
+      "name": "相关",
+      "type": "bar",
+      "stack": "站点分布",
+      "data": [
+        10,
+        52,
+        200,
+        334,
+        390,
+        330,
+        220,
+        22,
+        44,
+        55
+      ]
+    },
+    {
+      "name": "负面",
+      "type": "bar",
+      "stack": "站点分布",
+      "data": [
+        10,
+        52,
+        200,
+        334,
+        390,
+        330,
+        220,
+        22,
+        44,
+        55
+      ]
+    },
+    {
+      "name": "正面",
+      "type": "bar",
+      "stack": "站点分布",
+      "data": [
+        10,
+        52,
+        200,
+        334,
+        390,
+        330,
+        220,
+        22,
+        44,
+        55
+      ]
+    }
+  ]
+}

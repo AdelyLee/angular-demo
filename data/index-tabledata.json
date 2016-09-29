@@ -1,0 +1,79 @@
+{
+  "xgcontent": [
+    {
+      "name": "相关",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "22222"
+    },
+    {
+      "name": "舆情",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "2222"
+    },
+    {
+      "name": "负面",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "555"
+    },
+    {
+      "name": "正面",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "555"
+    }
+  ],
+  "xwcontent": [
+    {
+      "name": "新闻",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "22222"
+    },
+    {
+      "name": "论坛",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "2222"
+    },
+    {
+      "name": "微博",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "555"
+    },
+    {
+      "name": "微信",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "555"
+    },
+    {
+      "name": "博客",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "555"
+    },
+    {
+      "name": "综合",
+      "jtcount": "100",
+      "ztcount": "1000",
+      "qtcount": "20000",
+      "scount": "555"
+    }
+  ]
+}
+
+ 
+

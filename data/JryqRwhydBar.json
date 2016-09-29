@@ -1,0 +1,101 @@
+{
+  "containerId": "JryqRwhydBar",
+  "color": [
+    "#E873E9",
+    "#2FDBF5",
+    "#FF604F"
+  ],
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "legend":{
+    "data":["相关","负面","正面"]
+  },
+  "grid": {
+    "left": "3%",
+    "right": "4%",
+    "bottom": "3%",
+    "containLabel": true
+  },
+  "xAxis": [
+    {
+      "type": "category",
+      "data": [
+        "佚名",
+        "佚名",
+        "石家庄没有章",
+        "财经评论",
+        "zhdj",
+        "丹丹的右上",
+        "路虎灭有",
+        "黑杰克",
+        "海泽尔",
+        "冯唐"
+      ],
+      "axisTick": {
+        "alignWithLabel": true
+      }
+    }
+  ],
+  "yAxis": [
+    {
+      "type": "value"
+    }
+  ],
+  "series": [
+    {
+      "name": "相关",
+      "type": "bar",
+      "stack": "人物活跃度",
+      "data": [
+        10,
+        52,
+        200,
+        334,
+        390,
+        330,
+        220,
+        22,
+        44,
+        55
+      ]
+    },
+    {
+      "name": "负面",
+      "type": "bar",
+      "stack": "人物活跃度",
+      "data": [
+        10,
+        52,
+        200,
+        334,
+        390,
+        330,
+        220,
+        22,
+        44,
+        55
+      ]
+    },
+    {
+      "name": "正面",
+      "type": "bar",
+      "stack": "人物活跃度",
+      "data": [
+        10,
+        52,
+        200,
+        334,
+        390,
+        330,
+        220,
+        22,
+        44,
+        55
+      ]
+    }
+  ]
+}

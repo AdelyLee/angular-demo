@@ -1,0 +1,37 @@
+{
+  "containerId": "JryqWzsxtjBar",
+  "color":[
+    "#FF604F"
+  ],
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+
+  "xAxis": [
+    {
+      "type": "category",
+      "data": [
+        "预警信息",
+        "相关信息",
+        "负面信息",
+        "正面信息",
+        "舆情信息"
+      ]
+    }
+  ],
+  "yAxis": [
+    {
+      "type": "value"
+    }
+  ],
+  "series": [
+    {
+      "name": "文章属性统计",
+      "type": "bar",
+      "data": [52,152,252,352,152]
+    }
+  ]
+}

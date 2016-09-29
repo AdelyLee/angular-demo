@@ -1,0 +1,62 @@
+{   
+   "containerId": "piehtchart",
+   "tooltip" : {
+        "trigger": "item",
+        "formatter": "{a} <br/>{b} : {c} ({d}%)"
+    },
+    "legend": {
+        "orient" : "vertical",
+        "x" : "left",
+        "data":["新闻","微信","综合","博客","微博","论坛"]
+    },
+    "calculable" : false,
+    "series" : [
+        {
+            "name":"新闻",
+            "type":"pie",
+            "selectedMode": "single",
+            "radius" : [0, 40],
+            "x": "20%",
+            "width": "40%",
+            "funnelAlign": "right",
+            "max": 548,
+            
+            "itemStyle" : {
+                "normal" : {
+                    "label" : {
+                        "position" : "inner"
+                    },
+                    "labelLine" : {
+                        "show" : false
+                    }
+                }
+            },
+            "data":[
+                {"value":335, "name":"正面"},
+                {"value":148, "name":"负面"}
+            ]
+        },
+        {
+            "name":"新闻",
+            "type":"pie",
+            "radius" : [60, 100],
+            
+            // for funnel
+            "x": "60%",
+            "width": "35%",
+            "funnelAlign": "left",
+            "max": 148,
+            
+            "data":[
+                {"value":335, "name":"新闻"},
+                {"value":310, "name":"微信"},
+                {"value":234, "name":"综合"},
+                {"value":135, "name":"博客"},
+                {"value":1048, "name":"微博"},
+                {"value":251, "name":"论坛"}
+            ]
+        }
+    ]
+
+
+}

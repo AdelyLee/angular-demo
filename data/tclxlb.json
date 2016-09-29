@@ -1,0 +1,62 @@
+{"tclxcontent":[
+{
+  "tcname":"套餐",
+  "syname":"试用套餐",
+   "type": [
+       { "name": "相关词", "count": "0" },
+       { "name": "事件检测", "count": "1" },
+       { "name": "导控建议", "count": "1" },
+       { "name": "专业报告", "count": "1" },
+       { "name": "身份查询", "count": "1" },
+       { "name": "贴吧IP查询", "count": "1" },
+       { "name": "短信预警", "count": "10" },
+       { "name": "培训天数", "count": "0" }
+       ] 
+  },
+ {
+  "tcname":"套餐",
+  "syname":"团级套餐",
+   "type": [
+       { "name": "相关词", "count": "0" },
+       { "name": "事件检测", "count": "1" },
+       { "name": "导控建议", "count": "1" },
+       { "name": "专业报告", "count": "1" },
+       { "name": "身份查询", "count": "1" },
+       { "name": "贴吧IP查询", "count": "1" },
+       { "name": "短信预警", "count": "10" },
+       { "name": "培训天数", "count": "0" }
+       ] 
+  },
+  {
+  "tcname":"套餐",
+  "syname":"师级套餐",
+   "type": [
+       { "name": "相关词", "count": "0" },
+       { "name": "事件检测", "count": "1" },
+       { "name": "导控建议", "count": "1" },
+       { "name": "专业报告", "count": "1" },
+       { "name": "身份查询", "count": "1" },
+       { "name": "贴吧IP查询", "count": "1" },
+       { "name": "短信预警", "count": "10" },
+       { "name": "培训天数", "count": "0" }
+       ] 
+  },
+  {
+  "tcname":"套餐",
+  "syname":"军级套餐",
+   "type": [
+       { "name": "相关词", "count": "0" },
+       { "name": "事件检测", "count": "1" },
+       { "name": "导控建议", "count": "1" },
+       { "name": "专业报告", "count": "1" },
+       { "name": "身份查询", "count": "1" },
+       { "name": "贴吧IP查询", "count": "1" },
+       { "name": "短信预警", "count": "10" },
+       { "name": "培训天数", "count": "0" }
+       ] 
+  }
+]
+}
+
+ 
+
